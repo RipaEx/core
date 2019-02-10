@@ -1,6 +1,8 @@
 const configMainnet = require('./networks/ark/mainnet.json')
 const configDevnet = require('./networks/ark/devnet.json')
 const configTestnet = require('./networks/ark/testnet.json')
+const configXPXMainnet = require('./networks/xpx/mainnet.json')
+const configXPXDevnet = require('./networks/xpx/devnet.json')
 
 /**
  * The Arktoshi base.
@@ -57,5 +59,9 @@ exports.CONFIGURATIONS = Object.freeze({
     MAINNET: configMainnet,
     DEVNET: configDevnet,
     TESTNET: configTestnet,
+  },
+  XPX: {
+    MAINNET: configXPXMainnet,
+    DEVNET: configXPXDevnet,
   },
 })

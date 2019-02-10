@@ -1,0 +1,15 @@
+{
+  "minimumVersion": ">=2.0.0",
+  "minimumNetworkReach": 1,
+  "globalTimeout": 5000,
+  "coldStart": 30,
+  "whiteList": [],
+  "blackList": [],
+  "list": [
+    {
+      "ip": "51.15.46.213",
+      "port": 7500
+    }
+  ],
+  "sources": []
+}
