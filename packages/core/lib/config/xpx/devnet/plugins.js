@@ -70,4 +70,8 @@ module.exports = {
     whitelist: ['127.0.0.1', '::ffff:127.0.0.1'],
   },
   '@arkecosystem/core-snapshots': {},
+  '@arkecosystem/core-vote-report': {
+    host: process.env.ARK_VOTE_REPORT_HOST || '0.0.0.0',
+    port: process.env.ARK_VOTE_REPORT_PORT || 7505,
+  },
 }
