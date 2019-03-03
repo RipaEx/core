@@ -1,6 +1,6 @@
 {
   "minimumVersion": ">=2.0.0",
-  "minimumNetworkReach": 2,
+  "minimumNetworkReach": 1,
   "globalTimeout": 5000,
   "coldStart": 30,
   "whiteList": [],
