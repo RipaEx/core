@@ -1,6 +1,6 @@
 {
-  "minimumVersion": ">=2.0.0",
-  "minimumNetworkReach": 1,
+  "minimumVersion": ">=1.1.0",
+  "minimumNetworkReach": 2,
   "globalTimeout": 5000,
   "coldStart": 30,
   "whiteList": [],
@@ -28,6 +28,10 @@
     },
     {
       "ip": "51.15.120.180",
+      "port": 5501
+    },
+    {
+      "ip": "51.15.84.120",
       "port": 5501
     }
   ],
