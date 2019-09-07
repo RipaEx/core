@@ -14,21 +14,21 @@ node ./scripts/upgrade/upgrade.js
 # https://github.com/ArkEcosystem/core/blob/develop/scripts/upgrade/upgrade.js#L206
 cd ~
 
-if [ -f .config/ark-core/devnet/.env ]; then
-    sed -i 's/ARK_/CORE_/g' .config/ark-core/devnet/.env
+if [ -f .config/xpx-core/devnet/.env ]; then
+    sed -i 's/ARK_/CORE_/g' .config/xpx-core/devnet/.env
 fi
 
-if [ -f .config/ark-core/devnet/plugins.js ]; then
-    sed -i 's/ARK_/CORE_/g' .config/ark-core/devnet/plugins.js
+if [ -f .config/xpx-core/devnet/plugins.js ]; then
+    sed -i 's/ARK_/CORE_/g' .config/xpx-core/devnet/plugins.js
 fi
 
-if [ -f .config/ark-core/mainnet/.env ]; then
-    sed -i 's/ARK_/CORE_/g' .config/ark-core/mainnet/.env
+if [ -f .config/xpx-core/mainnet/.env ]; then
+    sed -i 's/ARK_/CORE_/g' .config/xpx-core/mainnet/.env
 fi
 
-if [ -f .config/ark-core/mainnet/plugins.js ]; then
-    sed -i 's/ARK_/CORE_/g' .config/ark-core/mainnet/plugins.js
+if [ -f .config/xpx-core/mainnet/plugins.js ]; then
+    sed -i 's/ARK_/CORE_/g' .config/xpx-core/mainnet/plugins.js
 fi
 
-cd ~/ark-core
+cd ~/xpx-core
 yarn setup

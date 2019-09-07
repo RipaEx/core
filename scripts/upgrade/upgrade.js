@@ -13,13 +13,13 @@ const main = async () => {
     } = await prompts([{
         type: 'text',
         name: 'corePath',
-        initial: expandHomeDir('~/ark-core'),
+        initial: expandHomeDir('~/xpx-core'),
         message: 'Where is the installation located at? [press ENTER to use default]',
         validate: value => fs.existsSync(value) ? true : `${value} does not exist.`
     }, {
         type: 'text',
         name: 'coreData',
-        initial: expandHomeDir('~/.ark'),
+        initial: expandHomeDir('~/.xpx'),
         message: 'Where is the configuration located at? [press ENTER to use default]',
         validate: value => fs.existsSync(value) ? true : `${value} does not exist.`
     }, {
@@ -35,7 +35,7 @@ const main = async () => {
     }]);
 
     // Paths
-    const corePaths = envPaths('ark', {
+    const corePaths = envPaths('xpx', {
         suffix: 'core'
     });
 
