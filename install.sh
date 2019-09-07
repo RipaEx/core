@@ -203,13 +203,13 @@ heading "Installing Ark Core..."
 
 cd "$HOME"
 
-if [ -d "ark-core" ]; then
+if [ -d "xpx-core" ]; then
    heading "Removing existing folder..."
-   rm -rf ark-core
+   rm -rf xpx-core
 fi
 
-git clone https://github.com/ArkEcosystem/core.git ~/ark-core
-cd ark-core
+git clone -b 2.1.2 https://github.com/RipaEx/core.git ~/xpx-core
+cd xpx-core
 yarn setup
 
 success "Installed Ark Core!"
@@ -225,18 +225,18 @@ if [[ "$choice" =~ ^(yes|y|Y) ]]; then
     select opt in "${validNetworks[@]}"; do
         case "$opt" in
             "mainnet")
-                mkdir -p "${HOME}/.config/ark-core/mainnet"
-                cp -rf "${HOME}/ark-core/packages/core/src/config/mainnet/." "${HOME}/.config/ark-core/mainnet"
+                mkdir -p "${HOME}/.config/xpx-core/mainnet"
+                cp -rf "${HOME}/xpx-core/packages/core/src/config/mainnet/." "${HOME}/.config/xpx-core/mainnet"
                 break
             ;;
             "devnet")
-                mkdir -p "${HOME}/.config/ark-core/devnet"
-                cp -rf "${HOME}/ark-core/packages/core/src/config/devnet/." "${HOME}/.config/ark-core/devnet"
+                mkdir -p "${HOME}/.config/xpx-core/devnet"
+                cp -rf "${HOME}/xpx-core/packages/core/src/config/devnet/." "${HOME}/.config/xpx-core/devnet"
                 break
             ;;
             "testnet")
-                mkdir -p "${HOME}/.config/ark-core/testnet"
-                cp -rf "${HOME}/ark-core/packages/core/src/config/testnet/." "${HOME}/.config/ark-core/testnet"
+                mkdir -p "${HOME}/.config/xpx-core/testnet"
+                cp -rf "${HOME}/xpx-core/packages/core/src/config/testnet/." "${HOME}/.config/xpx-core/testnet"
                 break
             ;;
             *)
