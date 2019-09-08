@@ -4,12 +4,12 @@ module.exports = {
         transports: {
             console: {
                 options: {
-                    level: process.env.CORE_LOG_LEVEL || "debug",
+                    level: process.env.CORE_LOG_LEVEL || "info",
                 },
             },
             dailyRotate: {
                 options: {
-                    level: process.env.CORE_LOG_LEVEL || "debug",
+                    level: process.env.CORE_LOG_LEVEL || "info",
                 },
             },
         },
